@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <header id=" header">
+        <div class="header-main">
+            <div id="header-title">
+                <h1>Your Password Generator</h1>
+            </div>
+            <div id="header-time">
+                <span>Time:
+                    <span id="hours"></span>
+                </span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="input-container">
+            <div class="characters-length">
+                <input type="input" id="characthers-length-input" name="characters">
+                <label for="characters" id="password-length-label">Password length</label>
+                <label for="characters" id="password-length-sublabel">Password's lengths must be at least 8 to 128
+                    characters!</label>
+            </div>
+            <div class="characters-type">
+                <span>
+                    <input type="checkbox" id="lower_latters" name="lower_latters">
+                    <label for="lower_latters">Lower Letters</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="upper_latters" name="upper_latters">
+                    <label for="upper_latters">Upper Letters</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="numbers" name="numbers">
+                    <label for="numbers">Numbers</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="special_characters" name="special_characters">
+                    <label for="special_characters">Symbols</label>
+                </span>
+
+
+            </div>
+            <div class="password-information">
+                <textarea id="password-generated" rows="4" cols="50"></textarea>
+            </div>
+            <div class="btn">
+                <button id="password-generate-button">PressME</button>
+                <button id="save-generate-button">Clipboard</button>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
